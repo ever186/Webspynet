@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportar un Problema - SPYNET</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            margin: 0;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d4ff, #ffffff, #0099cc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        input, textarea {
+            width: 90%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            resize: none;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #ccc;
+        }
+        button {
+            background: #00d4ff;
+            color: #000;
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reportar un Problema</h1>
+    <form action="mailto:everleiva186@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="Correo" placeholder="Tu Correo Electrónico" required>
+        <textarea name="Mensaje" rows="6" placeholder="Describe el problema o sugerencia..." required></textarea>
+        <button type="submit">Enviar Reporte</button>
+    </form>
+    <p>Gracias por ayudarnos a mejorar SPYNET V3.0.</p>
+</body>
+</html>
